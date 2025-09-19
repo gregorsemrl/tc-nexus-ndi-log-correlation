@@ -1,4 +1,4 @@
-Introduction
+WHen you make changes to Introduction, you can commit
 
 **What You'll Learn**
 
