@@ -1,0 +1,57 @@
+{
+  "id": "tc-nexus-ndi-log-correlation",
+  "title": "Correlating Network Logs Using Cisco Nexus Dashboard Insights (NDI)",
+  "description": "This tutorial introduces key log correlation concepts and walks learners through collecting logs from Nexus devices and using NDI to identify event patterns and potential root causes.",
+  "date": "2025-09-18",
+  "duration": "60:00",
+  "ia-guid": "e4313330-24cf-4d18-9a89-b7b3044c7340",
+  "lesson-guid": "03db9225-dbe2-48f4-963d-8baa0df2a541",
+  "certifications": [""],
+  "skill-levels": "Intermediate",
+  "tags": [
+    { "tag": "Nexus" },
+    { "tag": "Log Correlation" },
+    { "tag": "Cisco NDI" }
+  ],
+  "technologies": [{ "tech": "Networking" }],
+  "files": [
+    {
+      "label": "Overview",
+      "duration": "2:30",
+      "xy-guid": "f8611b31-84cb-4610-8c48-a525946ced1d",
+      "file": "step-1.md"
+    },
+    {
+      "label": "First topic",
+      "duration": "5:00",
+      "xy-guid": "e5eb5c96-aeef-4c90-a775-0760c3b1ba01",
+      "file": "step-2.md"
+    },
+    {
+      "label": "Second Topic",
+      "duration": "10:00",
+      "xy-guid": "735ecfbf-6f92-4bfd-bc75-69f7524ed75f",
+      "file": "step-3.md"
+    },
+    {
+      "label": "Third Topic",
+      "duration": "20:00",
+      "xy-guid": "67592829-8226-49cd-8af0-252e5f0b4518",
+      "file": "step-4.md"
+    },
+    {
+      "label": "Fourth Topic",
+      "duration": "20:00",
+      "xy-guid": "07d90d04-2ff5-4469-8965-86cfa387801f",
+      "file": "step-5.md"
+    },
+    {
+      "label": "Congratulations",
+      "duration": "2:30",
+      "xy-guid": "6807f3fd-7c32-4a39-a6f4-23c38fd41809",
+      "file": "step-6.md"
+    }
+  ],
+  "authors": [{ "name": "Jason Belk", "email": "jbelk@cisco.com" }],
+  "active": true
+}
