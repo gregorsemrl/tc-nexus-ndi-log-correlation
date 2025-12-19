@@ -24,7 +24,8 @@ For example, let's review the **Interface down** issue on the node **leaf-c** (I
 
 
 It seems there is an interface issue impacting the connectivity between nodes **leaf-c** and **spine-a**, based on the topology of the fabric. This event is correlated with other events:
-- interface **Eth1/53** admin status change on the **spine-a** to administratively down, a root cause ot this event
+- Interface **Eth1/53** admin status change on the **spine-a** node to administratively down, a root cause ot this event
 - Link Layer Discovery Protocol (LLDP) link flap, a consequence of interface shutdowns 
 
 Based on the available data, this was an intermittent issue since the issue has just been cleared. But was it really? We can verify that by using message patterns and timestamp.
+
