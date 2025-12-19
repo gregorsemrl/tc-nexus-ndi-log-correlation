@@ -1,55 +1,52 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus nibh eget turpis consequat venenatis. Aenean accumsan nibh lorem, at rutrum velit suscipit at. Donec at nisi eget ipsum mollis ultricies nec ac erat. Nulla facilisis lacus diam, eu lobortis sem molestie ut. Suspendisse id mauris eget dui tempor tristique. In a dolor pulvinar, fermentum nibh id, aliquet libero. Proin nisl ex, semper eu nulla vitae, finibus faucibus ipsum. Nunc euismod, libero mollis porttitor egestas, nisl diam vulputate velit, at tincidunt quam lacus in tortor. Quisque sit amet velit ac turpis fringilla pretium eget vel risus. Proin vestibulum sapien lectus, vel ultrices leo molestie id. Vestibulum vel commodo orci. Vestibulum ac ligula ante. Maecenas eleifend laoreet metus, sed vulputate mi. Nullam et metus ullamcorper, tempor turpis id, posuere orci. Sed quis turpis ornare, tincidunt felis quis, luctus ligula.
+**Data collection for analysis and troubleshooting** is crucial in monitoring the health of a network. Several mechanisms, including Simple Network Management Protocol (SNMP), CLI, and syslog, are available for collecting network data. Yet, these mechanisms have limitations that hinder automation and scalability.
 
-**Nunc dictum vel dolor sit amet laoreet.**
+**The pull model**, an older mechanism for collecting data from a network, has its limitations. In this model, the client initiates the request for data from network elements. However, when there is more than one network management station (NMS) in the network, the pull model does not scale. 
 
- Maecenas sed turpis blandit, elementum urna vitae, pellentesque justo. In mollis ultrices rhoncus. Nulla ultrices convallis iaculis. Sed sagittis urna et purus fringilla scelerisque quis vitae est. Integer rhoncus mauris urna, vel mattis neque sagittis a. In leo arcu, ornare nec feugiat nec, interdum nec quam. Nam iaculis vehicula orci, eget porta neque dignissim quis. Pellentesque a mauris malesuada, mollis purus quis, tincidunt elit. Curabitur accumsan aliquet augue et tincidunt. Duis neque nunc, varius quis nulla non, tempor sagittis mauris.
+On the other hand, **the push model** continuously streams data out of the network and notifies the client. This model is enabled by telemetry, which provides near-real-time access to monitoring data. The data can be retrieved either periodically (frequency-based) or only when a change occurs in any object on a specified path (event-based).
 
-```bash
-Donec
- tincidunt
- risus
- vitae
- tortor
- semper
- faucibus.
- Suspendisse
- mollis
- auctor
- tempor.
-```
+![Cisco NDI Overview Page](./images/4-01.png)
+
+**Fabrics**
+
+Nexus Dashboard Insights processes and analyzes telemetry data continuously streamed from all the devices in the fabric.
+
+Fabrics are on-premises network regions that consist of a group of switches and other networking devices that provide connectivity for your applications and endpoints. You can split fabrics into different availability zones, such as pods, that are analyzed and managed by Nexus Dashboard Insights.
+
+Types of on-premises fabrics:
+- **Online fabrics**: Multiple Nexus switches running ACI or NX-OS that can be represented by a controller such as Cisco APIC or NDFC and connected to Nexus Dashboard Insights to continuously stream telemetry. Types of online fabrics include:
+
+    - **ACI**: Multiple Nexus switches with Cisco ACI and represented by a Cisco Application Policy Infrastructure Controller (APIC).
+
+    - **NDFC**: Multiple Nexus switches with Cisco NX-OS and represented by Cisco Nexus Dashboard Fabric Controller (NDFC) NDFC.
+
+    - **NX-OS**: A group of Cisco Nexus 9000 switches running NX-OS without a controller.
+
+- **Snapshot fabrics**: Controller-based fabrics, that are referenced by a snapshot, for use in one-time analysis or demonstrations. They may or may not be connected to Nexus Dashboard Insights over the network.
 
 
-**Donec tincidunt risus vitae tortor semper faucibus**
+**Verify and Enable Telemetry Collection**
 
-Suspendisse mollis auctor tempor. Nullam tincidunt risus a nunc dignissim imperdiet. Nunc at nunc nibh. Aliquam rhoncus, dolor eleifend hendrerit scelerisque, mi ligula varius purus, sed auctor elit purus nec diam. Suspendisse id ultricies ipsum. Aenean in arcu quis risus blandit vulputate nec ut orci. Ut mattis urna turpis, quis faucibus nisi rhoncus nec. Curabitur suscipit suscipit turpis commodo posuere. Quisque at bibendum nunc, quis tincidunt arcu. Quisque felis neque, lobortis placerat lacinia lobortis, eleifend eu nulla. Ut blandit vel metus eu accumsan. Morbi euismod, lorem ut facilisis malesuada, diam massa ornare felis, non consequat felis justo quis urna. Mauris congue sem elit, et viverra nisi maximus sed. Nulla efficitur aliquam est a maximus.
+Once your fabric is onboarded and fully prepared, Nexus Dashboard Insights will start the fabric analysis to collect data from your fabric and display the fabric information in the Fabrics page. From there, you can view your fabric’s general information, inventory, L2 and L3 connectivity, endpoints, anomalies and advisories and more!
 
-![This is an image tag](./images/2-01.png)
+To verify the telemetry collection status, navigate to your fabric overview using **Manage > Fabrics > (Fabric Name)**. 
 
-Sed vitae risus eget erat mattis suscipit eu id justo. Donec et libero tellus. In at ex sit amet augue suscipit pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam ligula neque, aliquet in eleifend sit amet, dictum ac sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum pulvinar enim eu nisi elementum, a faucibus nunc tempus. Etiam dapibus mauris massa, a pellentesque metus vestibulum vitae. Sed elementum turpis arcu, quis condimentum est tempor in.
+![Cisco Fabric Overview Page](./images/4-02.png)
 
-```xml
-...
-<address-family>
-  <ipv4>
-    <unicast>
-      <import>
-        <route-target>
-          <address-list>
-            <name>64497:{$vlan-id}</name>
-          </address-list>
-        </route-target>
-      </import>
-      <export>
-        <route-target>
-          <address-list>
-            <name>64497:{$vlan-id}</name>
-          </address-list>
-        </route-target>
-      </export>
-    </unicast>
-  </ipv4>
-</address-family>
-...
-```
+> **Note**: In this example, the name of the fabric is **AI_Fabric**.
 
-Fusce tempor quam a erat aliquam venenatis. Fusce placerat ex non lorem semper pharetra. Aenean sed diam dictum, elementum sapien vitae, venenatis orci. Pellentesque dapibus augue ac arcu commodo auctor. Maecenas eget facilisis purus, vitae elementum enim. Nulla laoreet bibendum sapien, eget dictum ipsum rutrum sit amet. Aenean ac mauris non lacus scelerisque finibus placerat sit amet nulla. Proin rutrum lectus vitae dui ullamcorper, at commodo ligula fermentum. Donec molestie ligula tortor, nec volutpat nisi varius eget. Nulla eget vulputate ipsum. Curabitur ac nunc tempor, consectetur eros ac, interdum odio. Phasellus imperdiet malesuada nisi et feugiat. Donec ullamcorper dignissim nulla, nec malesuada ex euismod vel. In augue lorem, accumsan sed sapien vel, efficitur tempor metus. Morbi dapibus, lorem nec elementum maximus, diam ex malesuada felis, non fermentum massa tortor vel risus.
+Telemetry collection status provides insights into the health and performance of the switches and devices in your network. The different telemetry collection statuses at the fabric level include:
+- **OK** - This status indicates that the telemetry data streaming from all the switches to Nexus Dashboard Insights is functioning correctly. This is the desired state, as it ensures comprehensive monitoring and visibility into the network’s performance.
+- **Not OK** - This status indicates the telemetry data streaming from all the switches to Nexus Dashboard Insights is not functioning correctly. This could be as a result of various problems such as network outages, misconfigurations, or hardware failures.
+- **Partial OK** - This status indicates that telemetry data streaming from all the switches to Nexus Dashboard Insights is not functioning correctly from some of the switches but it is functioning correctly from others. This suggests an inconsistent or partial telemetry data flow within the network which could be caused by various factors, such as switch-specific issues or misconfigurations on some switches.
+
+You can check invidual node by clicking of the Telemetry Collection Status, and more detailed information will open on the right side of the window.
+
+![Telemetry Collection Status Details](./images/4-03.png)
+
+In case the telemetry is not yet configured, you can configure it by navigating to **Flow Collection** settings using **Admin > System Settings > Flow Collection**. Select your fabric by clicking on three dots and select **Enable**.
+
+![Cisco Fabric Overview Page](./images/4-04.png)
+
+This action will push telemetry configuration to your devices using the fabric controller.
+
+> **Note**: If you already enabled feature analytics on the switches, the configuration from Nexus Dashboard Insights will fail because you cannot enable feature netflow when feature analytics is enabled. Nexus Dashboard Insights raises a system anomaly that contains the following string: *Delivery failed with message: Netflow feature cannot be enabled while analytics feature is enabled.* Delete the the Flow Telemetry feature configurations from the switches and then push Traffic Analytics configuration from Nexus Dashboard Insights again.

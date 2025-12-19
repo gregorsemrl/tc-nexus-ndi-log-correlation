@@ -1,57 +1,63 @@
 {
   "id": "tc-nexus-ndi-log-correlation",
   "title": "Correlating Network Logs Using Cisco Nexus Dashboard Insights (NDI)",
-  "description": "This tutorial introduces key log correlation concepts and walks learners through collecting logs from Nexus devices and using NDI to identify event patterns and potential root causes.",
-  "date": "2025-09-18",
-  "duration": "60:00",
-  "ia-guid": "e4313330-24cf-4d18-9a89-b7b3044c7340",
-  "lesson-guid": "03db9225-dbe2-48f4-963d-8baa0df2a541",
-  "certifications": [""],
+  "description": "Learn how to correlate logs across devices to troubleshoot system issues using Cisco Nexus Dashboard Insights (NDI). ",
+  "date": "2025-12-01",
+  "duration": "1h0m0s",
+  "ia-guid": "eacdf9ff-a83e-4d11-b08c-bea2e6800882",
+  "lesson-guid": "7e3c6358-8c91-42f1-9c06-12a1e3e827a2",
+  "certifications": null,
   "skill-levels": "Intermediate",
   "tags": [
     { "tag": "Nexus" },
-    { "tag": "Log Correlation" },
-    { "tag": "Cisco NDI" }
+    { "tag": "Logs" },
+    { "tag": "Troubleshooting" }
   ],
-  "technologies": [{ "tech": "Networking" }],
+  "technologies": [{ "tech": "Cloud and Computing" }],
   "files": [
     {
       "label": "Overview",
       "duration": "2:30",
-      "xy-guid": "f8611b31-84cb-4610-8c48-a525946ced1d",
+      "xy-guid": "bfeed5d3-a57d-4eae-990d-f13e7f5ba2d5",
       "file": "step-1.md"
     },
     {
-      "label": "First topic",
-      "duration": "5:00",
-      "xy-guid": "e5eb5c96-aeef-4c90-a775-0760c3b1ba01",
+      "label": "Log Correlation",
+      "duration": "10:00",
+      "xy-guid": "35dacd1a-6ecc-47b8-bfaf-fc6fb3307707",
       "file": "step-2.md"
     },
     {
-      "label": "Second Topic",
+      "label": "Cisco Nexus Dashboard Insights Overview",
       "duration": "10:00",
-      "xy-guid": "735ecfbf-6f92-4bfd-bc75-69f7524ed75f",
+      "xy-guid": "b86be326-cf71-40a9-a2e5-4898583bb4c8",
       "file": "step-3.md"
     },
     {
-      "label": "Third Topic",
-      "duration": "20:00",
-      "xy-guid": "67592829-8226-49cd-8af0-252e5f0b4518",
+      "label": "Collecting Logs from Cisco Nexus Fabric",
+      "duration": "10:00",
+      "xy-guid": "afd04133-a48c-4090-a077-37fd2ef33725",
       "file": "step-4.md"
     },
     {
-      "label": "Fourth Topic",
-      "duration": "20:00",
-      "xy-guid": "07d90d04-2ff5-4469-8965-86cfa387801f",
+      "label": "Indetify a Fault and Track it Across Logs",
+      "duration": "15:00",
+      "xy-guid": "65046965-5269-4992-80ef-ea3cecd5ea0c",
       "file": "step-5.md"
+    },
+    {
+      "label": "Identify Recurring Events using Message Patterns",
+      "duration": "10:00",
+      "xy-guid": "062bd1fa-328b-4833-95a8-2e261119d4cc",
+      "file": "step-6.md"
     },
     {
       "label": "Congratulations",
       "duration": "2:30",
-      "xy-guid": "6807f3fd-7c32-4a39-a6f4-23c38fd41809",
-      "file": "step-6.md"
+      "xy-guid": "947190eb-b50c-4e34-a7d2-eed2ccf73c73",
+      "file": "step-7.md"
     }
   ],
-  "authors": [{ "name": "Jason Belk", "email": "jbelk@cisco.com" }],
+  "authors": [{ "name": "Jason Belk", "email": "jabelk@cisco.com" }],
   "active": true
 }

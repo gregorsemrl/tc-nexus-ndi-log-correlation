@@ -1,55 +1,43 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus nibh eget turpis consequat venenatis. Aenean accumsan nibh lorem, at rutrum velit suscipit at. Donec at nisi eget ipsum mollis ultricies nec ac erat. Nulla facilisis lacus diam, eu lobortis sem molestie ut. Suspendisse id mauris eget dui tempor tristique. In a dolor pulvinar, fermentum nibh id, aliquet libero. Proin nisl ex, semper eu nulla vitae, finibus faucibus ipsum. Nunc euismod, libero mollis porttitor egestas, nisl diam vulputate velit, at tincidunt quam lacus in tortor. Quisque sit amet velit ac turpis fringilla pretium eget vel risus. Proin vestibulum sapien lectus, vel ultrices leo molestie id. Vestibulum vel commodo orci. Vestibulum ac ligula ante. Maecenas eleifend laoreet metus, sed vulputate mi. Nullam et metus ullamcorper, tempor turpis id, posuere orci. Sed quis turpis ornare, tincidunt felis quis, luctus ligula.
+**Cisco Nexus Dashboard Insights** is a comprehensive analytics tool that simplifies and automates:
 
-**Nunc dictum vel dolor sit amet laoreet.**
+- Root cause analysis, 
+- Troubleshooting,  
+- Remediation of network issues. 
 
- Maecenas sed turpis blandit, elementum urna vitae, pellentesque justo. In mollis ultrices rhoncus. Nulla ultrices convallis iaculis. Sed sagittis urna et purus fringilla scelerisque quis vitae est. Integer rhoncus mauris urna, vel mattis neque sagittis a. In leo arcu, ornare nec feugiat nec, interdum nec quam. Nam iaculis vehicula orci, eget porta neque dignissim quis. Pellentesque a mauris malesuada, mollis purus quis, tincidunt elit. Curabitur accumsan aliquet augue et tincidunt. Duis neque nunc, varius quis nulla non, tempor sagittis mauris.
+With Insights, you also get product security incident response team, or otherwise known as PSIRT, and end of life notices on software versions and equipment that you have in your network, and attack assist to facilitate log collection and working with Terminal Access Controller Access-Control System (TACACS). These functions help you reduce mean time to identify and mean time to repair, save on operational costs, increase network availability, prevent hardware-related issues, and increase the productivity of your IT staff.
 
-```bash
-Donec
- tincidunt
- risus
- vitae
- tortor
- semper
- faucibus.
- Suspendisse
- mollis
- auctor
- tempor.
-```
+![Cisco Nexus Dashboard](./images/3-01.png)
 
 
-**Donec tincidunt risus vitae tortor semper faucibus**
+Cisco Nexus Dashboard Insights provides quite a few functions that you can use:
+- Root cause analysis: Identify, locate, analyze, and remediate the cause of a problem.
+- Error and packet drop detection: Identify where packet drops occur and their cause
+- Automated alerts and alerts explorer
+- Pre-change analysis and compliance alerts: Powerful planning tools
+- End-to-end workflows for automated problem remediation
+- Advisories on the impact of an upgrade
+- Mitigation and prevention of outages
+- Device hardening checks and software/hardware recommendations
+- Cisco Product Security Incident Response Team (PSIRT) and End-of-Life notices on software versions and equipment in your network
+- Cisco Technical Assistance Center (TAC) Assist and Topology Checker
 
-Suspendisse mollis auctor tempor. Nullam tincidunt risus a nunc dignissim imperdiet. Nunc at nunc nibh. Aliquam rhoncus, dolor eleifend hendrerit scelerisque, mi ligula varius purus, sed auctor elit purus nec diam. Suspendisse id ultricies ipsum. Aenean in arcu quis risus blandit vulputate nec ut orci. Ut mattis urna turpis, quis faucibus nisi rhoncus nec. Curabitur suscipit suscipit turpis commodo posuere. Quisque at bibendum nunc, quis tincidunt arcu. Quisque felis neque, lobortis placerat lacinia lobortis, eleifend eu nulla. Ut blandit vel metus eu accumsan. Morbi euismod, lorem ut facilisis malesuada, diam massa ornare felis, non consequat felis justo quis urna. Mauris congue sem elit, et viverra nisi maximus sed. Nulla efficitur aliquam est a maximus.
+With these functions, Cisco Nexus Dashboard Insights helps you reduce the mean-time-to-identify and mean-time-to-repair, save on operational costs, increase overall availability of your network, prevent hardware-related issues, and increase IT staff productivity.
 
-![This is an image tag](./images/2-01.png)
+**Cisco Nexus Dashboard Insights Key Features**
 
-Sed vitae risus eget erat mattis suscipit eu id justo. Donec et libero tellus. In at ex sit amet augue suscipit pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam ligula neque, aliquet in eleifend sit amet, dictum ac sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum pulvinar enim eu nisi elementum, a faucibus nunc tempus. Etiam dapibus mauris massa, a pellentesque metus vestibulum vitae. Sed elementum turpis arcu, quis condimentum est tempor in.
+The key features of Cisco Nexus Dashboard Insights can be divided into three main groups.
 
-```xml
-...
-<address-family>
-  <ipv4>
-    <unicast>
-      <import>
-        <route-target>
-          <address-list>
-            <name>64497:{$vlan-id}</name>
-          </address-list>
-        </route-target>
-      </import>
-      <export>
-        <route-target>
-          <address-list>
-            <name>64497:{$vlan-id}</name>
-          </address-list>
-        </route-target>
-      </export>
-    </unicast>
-  </ipv4>
-</address-family>
-...
-```
+![Key Features](./images/3-02.png)
 
-Fusce tempor quam a erat aliquam venenatis. Fusce placerat ex non lorem semper pharetra. Aenean sed diam dictum, elementum sapien vitae, venenatis orci. Pellentesque dapibus augue ac arcu commodo auctor. Maecenas eget facilisis purus, vitae elementum enim. Nulla laoreet bibendum sapien, eget dictum ipsum rutrum sit amet. Aenean ac mauris non lacus scelerisque finibus placerat sit amet nulla. Proin rutrum lectus vitae dui ullamcorper, at commodo ligula fermentum. Donec molestie ligula tortor, nec volutpat nisi varius eget. Nulla eget vulputate ipsum. Curabitur ac nunc tempor, consectetur eros ac, interdum odio. Phasellus imperdiet malesuada nisi et feugiat. Donec ullamcorper dignissim nulla, nec malesuada ex euismod vel. In augue lorem, accumsan sed sapien vel, efficitur tempor metus. Morbi dapibus, lorem nec elementum maximus, diam ex malesuada felis, non fermentum massa tortor vel risus.
+**Assurance and compliance functions** include configuration assurance, pre-change analysis and delta analysis. These are especially useful as planning tools. Another useful feature is connectivity explorer, which is very intuitive — you can "ask" Cisco Nexus Dashboard Insights to perform a connectivity analysis to check if an endpoint can reach an IP address, or another endpoint, and so on.
+
+**Visibility and troubleshooting tools** include, connectivity analysis, endpoint analytics, flow analytics, and topology view.
+
+**Advisory and maintenance tools** include various PSIRT and pre-upgrade alerts, advisories on software- and hardware-based known issues or hardware types, field notices, email notifications, and TAC assist.
+
+**Cisco Nexus Dashboard Insights Overview Page**
+
+On the Overview page, you are presented with a summary of alerts, an anomaly score, the timeline, and a breakdown of anomalies and advisories. All the elements that you see are clickable, so if you are interested in leaf nodes with a Critical anomaly score, click it to see the affected leaf nodes. This way, you can further drill down into an anomaly.
+
+![Cisco NDI Overview Page](./images/3-03.png)
+

@@ -1,55 +1,53 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus nibh eget turpis consequat venenatis. Aenean accumsan nibh lorem, at rutrum velit suscipit at. Donec at nisi eget ipsum mollis ultricies nec ac erat. Nulla facilisis lacus diam, eu lobortis sem molestie ut. Suspendisse id mauris eget dui tempor tristique. In a dolor pulvinar, fermentum nibh id, aliquet libero. Proin nisl ex, semper eu nulla vitae, finibus faucibus ipsum. Nunc euismod, libero mollis porttitor egestas, nisl diam vulputate velit, at tincidunt quam lacus in tortor. Quisque sit amet velit ac turpis fringilla pretium eget vel risus. Proin vestibulum sapien lectus, vel ultrices leo molestie id. Vestibulum vel commodo orci. Vestibulum ac ligula ante. Maecenas eleifend laoreet metus, sed vulputate mi. Nullam et metus ullamcorper, tempor turpis id, posuere orci. Sed quis turpis ornare, tincidunt felis quis, luctus ligula.
+**Log Correlation Overview**
 
-**Nunc dictum vel dolor sit amet laoreet.**
+Logs are often the first place to look when something goes wrong. Today's solutions rely on a system of linked components. These components are inference servers, such as Ollama,  databases, APIs, front end UIs, GPUs, storage systems, network devices, containers, and other components. Each of these systems produces its own set of logs.
 
- Maecenas sed turpis blandit, elementum urna vitae, pellentesque justo. In mollis ultrices rhoncus. Nulla ultrices convallis iaculis. Sed sagittis urna et purus fringilla scelerisque quis vitae est. Integer rhoncus mauris urna, vel mattis neque sagittis a. In leo arcu, ornare nec feugiat nec, interdum nec quam. Nam iaculis vehicula orci, eget porta neque dignissim quis. Pellentesque a mauris malesuada, mollis purus quis, tincidunt elit. Curabitur accumsan aliquet augue et tincidunt. Duis neque nunc, varius quis nulla non, tempor sagittis mauris.
+Log correlation is about **connecting the dots between all these log sources to understand what is really happening**. It helps you reconstruct the timeline of events across different services, identify root causes, and debug performance bottlenecks.
 
-```bash
-Donec
- tincidunt
- risus
- vitae
- tortor
- semper
- faucibus.
- Suspendisse
- mollis
- auctor
- tempor.
-```
+**What Is a Log?**
+
+Think of a log as a digital journal entry written by your system. Every time something happens—such as a user sending a prompt, a model generating tokens, or an error occurring in your application—a log entry records it. Logs can include timestamps, log severity levels, status codes, messages, and more. 
+ 
+**What Is Log Correlation?**
+
+Log correlation involves identifying relationships between events from different log sources. For example, matching access and error logs can reveal issues during a specific user session in an app.
+
+Think of a user making a request to your app. That one request may trigger:
+- An API gateway log
+- A backend process log
+- A request to the database server
+- A GPU workload spike
+- An error in a downstream database or vector search
+
+![Logs](images/2-01.png)
+Without correlation, you are staring at isolated log entries. With correlation, you are reconstructing a story. When working with any IT system, you encounter a wide range of logs. 
+These logs vary in format and purpose. Some focus on security, like access or event logs, while others provide performance and reliability insights, such as error or resource usage logs. Understanding how to use each type helps you monitor your system effectively and respond quickly to issues.
+
+![alt text](image.png)
+
+Types of logs you may encounter:
+- **Access Logs**: Track every incoming request with details like IP address, timestamp, requested resource, and response code. These help identify traffic patterns and potential security issues, such as sudden spikes from a single IP.
+
+- **Error Logs**: Capture failures like broken database connections or crashes. These logs are key to diagnosing problems and keeping services stable.
+
+- **Event Logs**: Record major system activities, such as logins, reboots, or config changes. Useful for auditing and spotting unauthorized access or system changes.
+
+> You typically only have access to logs from systems you directly manage. For example, when interacting with third-party APIs, you might get a high-level response, but you won’t see detailed backend logs; they remain with the provider.
 
 
-**Donec tincidunt risus vitae tortor semper faucibus**
+**Techniques for Log Correlation**
 
-Suspendisse mollis auctor tempor. Nullam tincidunt risus a nunc dignissim imperdiet. Nunc at nunc nibh. Aliquam rhoncus, dolor eleifend hendrerit scelerisque, mi ligula varius purus, sed auctor elit purus nec diam. Suspendisse id ultricies ipsum. Aenean in arcu quis risus blandit vulputate nec ut orci. Ut mattis urna turpis, quis faucibus nisi rhoncus nec. Curabitur suscipit suscipit turpis commodo posuere. Quisque at bibendum nunc, quis tincidunt arcu. Quisque felis neque, lobortis placerat lacinia lobortis, eleifend eu nulla. Ut blandit vel metus eu accumsan. Morbi euismod, lorem ut facilisis malesuada, diam massa ornare felis, non consequat felis justo quis urna. Mauris congue sem elit, et viverra nisi maximus sed. Nulla efficitur aliquam est a maximus.
+To correlate logs effectively, you are going to rely on key techniques that help align entries from different sources and reconstruct end-to-end behavior:
+ 
+- **Timestamps and request IDs** are essential for linking logs across services. These fields help you identify which logs belong to the same request, making correlation more precise and reliable. Pattern matching helps find connections and infer relationships between different events by looking for repeated or familiar patterns in messages, user input, or known sequences of events.
+- **Log analysis tools** can use these fields to automatically group-related log entries from different sources, helping you quickly trace workflows and troubleshoot issues across complex systems.
+- **Pattern matching** involves inferring relationships based on similar messages, user input, or known sequences of events.
 
-![This is an image tag](./images/2-01.png)
+![alt text](image-1.png)
 
-Sed vitae risus eget erat mattis suscipit eu id justo. Donec et libero tellus. In at ex sit amet augue suscipit pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam ligula neque, aliquet in eleifend sit amet, dictum ac sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum pulvinar enim eu nisi elementum, a faucibus nunc tempus. Etiam dapibus mauris massa, a pellentesque metus vestibulum vitae. Sed elementum turpis arcu, quis condimentum est tempor in.
+Most systems also include a log severity level at the beginning of each message, which helps categorize and prioritize log analysis:
+- **[INFO]**: Normal operational messages.
+- **[WARN]**: Non-critical issues that may need attention.
+- **[ERROR]**: Critical problems requiring intervention.
+- **[DEBUG]**: Detailed information, usually used by developers.
 
-```xml
-...
-<address-family>
-  <ipv4>
-    <unicast>
-      <import>
-        <route-target>
-          <address-list>
-            <name>64497:{$vlan-id}</name>
-          </address-list>
-        </route-target>
-      </import>
-      <export>
-        <route-target>
-          <address-list>
-            <name>64497:{$vlan-id}</name>
-          </address-list>
-        </route-target>
-      </export>
-    </unicast>
-  </ipv4>
-</address-family>
-...
-```
-
-Fusce tempor quam a erat aliquam venenatis. Fusce placerat ex non lorem semper pharetra. Aenean sed diam dictum, elementum sapien vitae, venenatis orci. Pellentesque dapibus augue ac arcu commodo auctor. Maecenas eget facilisis purus, vitae elementum enim. Nulla laoreet bibendum sapien, eget dictum ipsum rutrum sit amet. Aenean ac mauris non lacus scelerisque finibus placerat sit amet nulla. Proin rutrum lectus vitae dui ullamcorper, at commodo ligula fermentum. Donec molestie ligula tortor, nec volutpat nisi varius eget. Nulla eget vulputate ipsum. Curabitur ac nunc tempor, consectetur eros ac, interdum odio. Phasellus imperdiet malesuada nisi et feugiat. Donec ullamcorper dignissim nulla, nec malesuada ex euismod vel. In augue lorem, accumsan sed sapien vel, efficitur tempor metus. Morbi dapibus, lorem nec elementum maximus, diam ex malesuada felis, non fermentum massa tortor vel risus.
