@@ -17,7 +17,7 @@ Types of on-premises fabrics:
 
     - **ACI**: Multiple Nexus switches with Cisco ACI and represented by a Cisco Application Policy Infrastructure Controller (APIC).
 
-    - **NDFC**: Multiple Nexus switches with Cisco NX-OS and represented by Cisco Nexus Dashboard Fabric Controller (NDFC) NDFC.
+    - **NDFC**: Multiple Nexus switches with Cisco NX-OS and represented by Cisco Nexus Dashboard Fabric Controller (NDFC).
 
     - **NX-OS**: A group of Cisco Nexus 9000 switches running NX-OS without a controller.
 
@@ -50,3 +50,4 @@ In case the telemetry is not yet configured, you can configure it by navigating 
 This action will push telemetry configuration to your devices using the fabric controller.
 
 > **Note**: If you already enabled feature analytics on the switches, the configuration from Nexus Dashboard Insights will fail because you cannot enable feature netflow when feature analytics is enabled. Nexus Dashboard Insights raises a system anomaly that contains the following string: *Delivery failed with message: Netflow feature cannot be enabled while analytics feature is enabled.* Delete the the Flow Telemetry feature configurations from the switches and then push Traffic Analytics configuration from Nexus Dashboard Insights again.
+
