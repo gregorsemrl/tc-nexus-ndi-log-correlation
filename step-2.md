@@ -23,8 +23,6 @@ Think of a user making a request to your app. That one request may trigger:
 Without correlation, you are staring at isolated log entries. With correlation, you are reconstructing a story. When working with any IT system, you encounter a wide range of logs. 
 These logs vary in format and purpose. Some focus on security, like access or event logs, while others provide performance and reliability insights, such as error or resource usage logs. Understanding how to use each type helps you monitor your system effectively and respond quickly to issues.
 
-![alt text](image.png)
-
 Types of logs you may encounter:
 - **Access Logs**: Track every incoming request with details like IP address, timestamp, requested resource, and response code. These help identify traffic patterns and potential security issues, such as sudden spikes from a single IP.
 
@@ -50,4 +48,5 @@ Most systems also include a log severity level at the beginning of each message,
 - **[WARN]**: Non-critical issues that may need attention.
 - **[ERROR]**: Critical problems requiring intervention.
 - **[DEBUG]**: Detailed information, usually used by developers.
+
 
