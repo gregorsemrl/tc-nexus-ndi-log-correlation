@@ -13,11 +13,11 @@ Nexus Dashboard Insights processes and analyzes telemetry data continuously stre
 Fabrics are on-premises network regions that consist of a group of switches and other networking devices that provide connectivity for your applications and endpoints. You can split fabrics into different availability zones, such as pods, that are analyzed and managed by Nexus Dashboard Insights.
 
 Types of on-premises fabrics:
-- **Online fabrics**: Multiple Nexus switches running ACI or NX-OS that can be represented by a controller such as Cisco APIC or NDFC and connected to Nexus Dashboard Insights to continuously stream telemetry. Types of online fabrics include:
+- **Online fabrics**: Multiple Nexus switches running Cisco Application Centric Infrastructure (ACI) or Nexus OS (NX-OS) that can be represented by a controller such as Cisco Cisco Application Policy Infrastructure Controller (APIC) or Cisco Nexus Dashboard Fabric Controller (NDFC) and connected to Nexus Dashboard Insights to continuously stream telemetry. Types of online fabrics include:
 
-    - **ACI**: Multiple Nexus switches with Cisco ACI and represented by a Cisco Application Policy Infrastructure Controller (APIC).
+    - **ACI**: Multiple Nexus switches with Cisco ACI and represented by a Cisco APIC.
 
-    - **NDFC**: Multiple Nexus switches with Cisco NX-OS and represented by Cisco Nexus Dashboard Fabric Controller (NDFC).
+    - **NDFC**: Multiple Nexus switches with Cisco NX-OS and represented by Cisco NDFC.
 
     - **NX-OS**: A group of Cisco Nexus 9000 switches running NX-OS without a controller.
 
@@ -50,4 +50,5 @@ In case the telemetry is not yet configured, you can configure it by navigating 
 This action will push telemetry configuration to your devices using the fabric controller.
 
 > **Note**: If you already enabled feature analytics on the switches, the configuration from Nexus Dashboard Insights will fail because you cannot enable feature netflow when feature analytics is enabled. Nexus Dashboard Insights raises a system anomaly that contains the following string: *Delivery failed with message: Netflow feature cannot be enabled while analytics feature is enabled.* Delete the the Flow Telemetry feature configurations from the switches and then push Traffic Analytics configuration from Nexus Dashboard Insights again.
+
 
