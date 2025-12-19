@@ -14,7 +14,7 @@ Now select **View all anomalies**. This action will open an **Analyze > Anomalie
 
 ![Fabric Anomalies](./images/5-03.png)
 
-By default, all currently active anomalies are shown. From the filter, select the views **Unacknowledged** and **All Anomaly Types**. From the list, you can see that three records exist. Review the anomalies by ungrouping and reviewing them individually. Pay attention to the filter view (Unacknowledged, All anomaly types).
+By default, all currently active anomalies are shown. From the filter, select the views **Unacknowledged** and **All Anomaly Types**. From the list, you can see that five records exist. Review the anomalies by ungrouping and reviewing them individually. Pay attention to the filter view (Unacknowledged, All anomaly types).
 
 ![Fabric Anomalies](./images/5-04.png)
 
@@ -28,4 +28,5 @@ It seems there is an interface issue impacting the connectivity between nodes **
 - Link Layer Discovery Protocol (LLDP) link flap, a consequence of interface shutdowns 
 
 Based on the available data, this was an intermittent issue since the issue has just been cleared. But was it really? We can verify that by using message patterns and timestamp.
+
 
