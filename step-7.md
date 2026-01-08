@@ -1,14 +1,14 @@
 Congratulations! Your log correlation skills are growing!
 
-To continue building your skills, check out our additional tutorials, courses, and learning paths.
+To continue building your skills, check our additional tutorials, courses, and learning paths.
 
 **Why Create a Free Cisco U. Account?**
 
-A [Cisco U. account](http://u.cisco.com/?utm_campaign=tofu&utm_source=web-github&utm_medium=tc-tc-ucs-ai-ml-sizer) helps you:
+A [Cisco U. account](http://u.cisco.com/?utm_campaign=tofu&utm_source=web-github&utm_medium=tc-tc-ucs-ai-ml-sizer) enables you to:
 
-- **Personalize training:** Set your learning goals and pace.
+- **Personalize your training**: Set your learning goals and pace.
 
-- **Track progress:** Monitor your achievements and learning milestones.
+- **Track your progress**: Monitor your achievements and learning milestones.
 
 - **Resume anytime:** Continue your learning exactly where you stopped.
 
@@ -26,6 +26,5 @@ A [Cisco U. account](http://u.cisco.com/?utm_campaign=tofu&utm_source=web-github
 **Need Help or Want to Engage?**
 
 - To ask questions and share ideas, join our [Cisco Learning Community](https://learningnetwork.cisco.com/s/topic/0TO3i0000008jYHGAY/ccna-certification-community).
- 
-- For technical issues, feedback, or more resources, visit our [Cisco U. Support](https://learning-support.cisco.com/jira/servicedesk/customer/portal/3) page.
 
+- For technical issues, feedback, or more resources, visit our [Cisco U. Support](https://learning-support.cisco.com/jira/servicedesk/customer/portal/3) page.

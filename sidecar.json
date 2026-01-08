@@ -1,18 +1,14 @@
 {
   "id": "tc-nexus-ndi-log-correlation",
-  "title": "Correlating Network Logs Using Cisco Nexus Dashboard Insights (NDI)",
-  "description": "Learn how to correlate logs across devices to troubleshoot system issues using Cisco Nexus Dashboard Insights (NDI). ",
+  "title": "Correlating Network Logs Using Cisco Nexus Dashboard Insights",
+  "description": "Learn how to correlate logs across devices to troubleshoot system issues using Cisco Nexus Dashboard Insights.",
   "date": "2025-12-01",
   "duration": "1h0m0s",
   "ia-guid": "eacdf9ff-a83e-4d11-b08c-bea2e6800882",
   "lesson-guid": "7e3c6358-8c91-42f1-9c06-12a1e3e827a2",
   "certifications": null,
   "skill-levels": "Intermediate",
-  "tags": [
-    { "tag": "Nexus" },
-    { "tag": "Logs" },
-    { "tag": "Troubleshooting" }
-  ],
+  "tags": [{ "tag": "Nexus" }, { "tag": "Logs" }, { "tag": "Troubleshooting" }],
   "technologies": [{ "tech": "Cloud and Computing" }],
   "files": [
     {
@@ -40,13 +36,13 @@
       "file": "step-4.md"
     },
     {
-      "label": "Indetify a Fault and Track it Across Logs",
+      "label": "Identify a Fault and Track It Across Logs",
       "duration": "15:00",
       "xy-guid": "65046965-5269-4992-80ef-ea3cecd5ea0c",
       "file": "step-5.md"
     },
     {
-      "label": "Identify Recurring Events using Message Patterns",
+      "label": "Identify Recurring Events Using Message Patterns",
       "duration": "10:00",
       "xy-guid": "062bd1fa-328b-4833-95a8-2e261119d4cc",
       "file": "step-6.md"
