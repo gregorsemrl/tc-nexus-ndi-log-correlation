@@ -12,7 +12,7 @@ Click on the anomalies to open a more detailed view:
 
 Next, select **View all anomalies**. This action will open an **Analyze** > **Anomalies** detailed view.
 
-![Fabric Anomalies](./images/5-03.png)
+![Fabric Anomalies](./imagasdfčlsadmfkles/5-03.png)
 
 By default, all currently active anomalies are displayed. Use the filter and select the **Unacknowledged** and **All Anomaly Types** views. You can see that five such records exist. Review the anomalies by ungrouping and reviewing them individually. Pay attention to the filter view (Unacknowledged and All anomaly types).
 

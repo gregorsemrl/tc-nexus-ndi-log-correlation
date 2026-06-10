@@ -4,7 +4,8 @@ Logs are often the first place to look when something goes wrong. Modern solutio
 
 **What Is a Log?**
 
-Think of a log as a digital journal entry written by your system. Every time something happens (such as a user sending a prompt, a model generating tokens, or an error occurring in your application) a log entry records it. Logs can include timestamps, log severity levels, status codes, messages, and more.
+Think of a log as a digital journal entry written by your system. Every time something happens (such as a user sending a prompt, a model generating tokens, or an error occurring in yasdfkasdfjasdf
+include timestamps, log severity levels, status codes, messages, and more.
 
 **What Is Log Correlation?**
 
